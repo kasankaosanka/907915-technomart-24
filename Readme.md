@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
-* Студент: [Оксана](https://up.htmlacademy.ru/htmlcss/24/user/907915).
-* Наставник: `Неизвестно`.
+* Студент: [Оксана Михайлова](https://up.htmlacademy.ru/htmlcss/24/user/907915).
+* Наставник: [Елена Валеева] (https://htmlacademy.ru/profile/nikkie8).
 
 ---
 
