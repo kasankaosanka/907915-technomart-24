@@ -20,8 +20,12 @@
           г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
         </p>
         <ul class="user-navigation">
-          <li class="login-link">Войти</li>
-          <li class="signup-link">Регистрация</li>
+          <li>
+            <a class="login-link" href="#">Войти</a>
+          </li>
+          <li>
+            <a class="signup-link" href="#">Регистрация</a>
+          </li>
         </ul>
       </div>
       <nav class="main-navigation">
@@ -102,9 +106,21 @@
       </div>
     </footer>
 
-    <section class="modal modal-write-us">
-    </section>
     <section class="modal modal-map">
+      <img src="img/map-popup.jpg" width="940" height="446" alt="Магазин строительных товаров Техномарт по адресу: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+      <button class="modal-close" type="button">Закрыть</button>
+    </section>
+    <section class="modal modal-write-us">
+      <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
+        <label for="user-name">Ваше имя:</label>
+        <input type="text" name="name" placeholder="Имя Фамилия" id="user-name">
+        <label for="user-name">Ваш e-mail:</label>
+        <input type="text" name="email" placeholder="email@example.com" id="user-email">
+        <label for="user-text">Текст письма:</label>
+        <input type="text" name="text" placeholder="В свободной форме" id="user-text">
+        <button class="button" type="submit">Отправить</button>
+      </form>
+      <button class="modal-close" type="button">Закрыть</button>
     </section>
   </body>
 </html>
