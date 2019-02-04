@@ -8,7 +8,9 @@
     <header class="main-header">
       <div class="user-menu">
         <a><img src="img/logo-technomart.svg" width="137" height="22" alt="Логотип магазина Техномарт"></a>
-        <!--здесь будет форма поиска-->
+        <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+          <input type="search" name="search" placeholder="Поиск:">
+        </form>
         <a href="#">Закладки:</a>
         <a href="#">Корзина:</a>
         <a class="order" href="#">Оформить заказ</a>
@@ -21,10 +23,10 @@
         </p>
         <ul class="user-navigation">
           <li>
-            <a class="login-link" href="#">Войти</a>
+            <a class="user-link login" href="#">Войти</a>
           </li>
           <li>
-            <a class="signup-link" href="#">Регистрация</a>
+            <a class="user-link" href="#">Регистрация</a>
           </li>
         </ul>
       </div>
@@ -90,9 +92,9 @@
         </p>
         <div class="footer-social">
           <ul>
-            <li><a class="social-button" href="#">Вконтакте</a></li>
-            <li><a class="social-button" href="#">Фейсбук</a></li>
-            <li><a class="social-button" href="#">Инстаграм</a></li>
+            <li><a class="social-button visually-hidden" href="#">Вконтакте</a></li>
+            <li><a class="social-button visually-hidden" href="#">Фейсбук</a></li>
+            <li><a class="social-button visually-hidden" href="#">Инстаграм</a></li>
           </ul>
         </div>
         <p class="mail">
@@ -108,7 +110,9 @@
 
     <section class="modal modal-map">
       <img src="img/map-popup.jpg" width="940" height="446" alt="Магазин строительных товаров Техномарт по адресу: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
-      <button class="modal-close" type="button">Закрыть</button>
+      <button class="modal-close" type="button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
     </section>
     <section class="modal modal-write-us">
       <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
@@ -116,11 +120,13 @@
         <input type="text" name="name" placeholder="Имя Фамилия" id="user-name">
         <label for="user-name">Ваш e-mail:</label>
         <input type="text" name="email" placeholder="email@example.com" id="user-email">
-        <label for="user-text">Текст письма:</label>
-        <input type="text" name="text" placeholder="В свободной форме" id="user-text">
+        <h3>Текст письма:</h3>
+        <textarea name="text" cols="55" rows="7" placeholder="В свободной форме"></textarea>
         <button class="button" type="submit">Отправить</button>
       </form>
-      <button class="modal-close" type="button">Закрыть</button>
+      <button class="modal-close" type="button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
     </section>
   </body>
 </html>
