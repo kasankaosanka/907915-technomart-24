@@ -1,8 +1,8 @@
 body {
   margin: 0;
-  font-family: "Cuprum", Arial, sans-serif;
-  font-size: 17px;
-  line-height: 17px;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
   font-weight: normal;
   color: #000;
   background: #fff;
@@ -12,7 +12,18 @@ a {
   text-decoration: none;
 }
 
-.user-menu {
+.main-header-info,
+.main-navigation {
+  color: #fff;
+  background-color: #f3f7f8;
+}
+
+.main-header, .main-footer {
+  font-family: "Cuprum", Arial, sans-serif;
+}
+
+.user-menu, .main-navigation {
+  font-size: 17px;
   line-height: 18px;
   color: #fff;
   background-color: #293449;
@@ -27,13 +38,13 @@ a {
   background-color: #212a3a;
 }
 
-.user-menu a:active {
-  opacity: 0.6;
+.search-form~a:active {
+  color: rgba(255, 255, 255, 0.6);
   background-color: #161d29;
 }
 
 .logo {
-  border-bottom: 5px solid #b52933;
+  box-shadow: inset 0 -5px 0 0 rgba(0, 0, 0, 0.24);
   background-color: #ee3643;
 }
 
@@ -46,12 +57,11 @@ a {
   background-color: #293449;
 }
 
-.search-form input:hover,
-.search-form input:focus {
+.search-form input:hover {
   background-color: #212a3a;
 }
 
-.search-form input:active {
+.search-form input:focus {
   color: #000;
   background-color: #fff;
 }
@@ -70,33 +80,29 @@ a.order:focus {
   background-color: #5fbb2d;
 }
 
-.main-header-info,
-.main-navigation {
-  background-color: #f3f7f8;
+a.order:active {
+  background-color: #518534;
 }
 
-.main-header-info p {
+.main-header-info {
   font-size: 14px;
   line-height: 24px;
   color: #32425c;
 }
 
-p.shop-description, h1.shop-description {
+.shop-description, .shop-description {
   font-size: 16px;
+  line-height: 23px;
   font-style: italic;
   font-weight: normal;
-  line-height: 23px;
-  color: #ee3643;
-}
-
-.phone-number, .user-link {
-  font-size: 21px;
-  line-height: 21px;
-  text-align: center;
   color: #ee3643;
 }
 
 .phone-number {
+  font-size: 21px;
+  line-height: 25px;
+  text-align: center;
+  color: #ee3643;
   border: 3px solid #fff;
 }
 
@@ -105,6 +111,9 @@ p.shop-description, h1.shop-description {
 }
 
 .user-link {
+  font-size: 21px;
+  line-height: 25px;
+  text-align: center;
   color: #000;
   background-color: #fff;
 }
@@ -115,14 +124,13 @@ p.shop-description, h1.shop-description {
 }
 
 .user-link:active {
-  color: #000;
-  opacity: 0.3;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .site-navigation {
   list-style: none;
   background-color: #32425c;
-  border-bottom: 5px solid #293449;
+  box-shadow: inset 0 -5px 0 0 #293449;
 }
 
 .site-navigation a {
@@ -140,25 +148,21 @@ p.shop-description, h1.shop-description {
 
 .company-info h2,
 .contacts h2 {
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
-  line-height: 30px;
+  line-height: 36px;
   text-transform: uppercase;
-}
-
-.company-info p,
-.contacts p {
-  font-family: "PT Sans", Arial, sans-serif;
-  font-size: 13px;
-  line-height: 24px;
 }
 
 .company-info ul {
   list-style: none;
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
   line-height: 20px;
 }
 
 .button {
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
@@ -234,21 +238,22 @@ p.shop-description, h1.shop-description {
 }
 
 .modal-map img {
-  box-shadow: 0 0 20px #000;
+  box-shadow: 0 0 16px 8px rgba(0, 0, 0, 0.5);
 }
 
 .modal-write-us {
   border-top: 7px solid #ee3643;
+  box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.75);
 }
 
-.write-us label {
+.write-us-form label {
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
-  line-height: 18px;
+  line-height: 21px;
 }
 
 .write-us-form input,
 .write-us-form textarea {
-  font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
   color: #a9a9a9;
@@ -259,10 +264,6 @@ p.shop-description, h1.shop-description {
   background-color: #f4f4f4;
 }
 
-.modal-write-us {
-  box-shadow: 0 20px 40px #000;
-}
-
 .user-profile-and-logout {
   list-style: none;
   background-color: #fff;
@@ -270,19 +271,20 @@ p.shop-description, h1.shop-description {
 
 .user-account-info {
   list-style: none;
-}
-
-.user-name {
-  font-size: 21px;
-  line-height: 21px;
-  color: #000;
-}
-
-.user-account-info {
   font-size: 16px;
   line-height: 18px;
   color: #32425c;
   text-decoration: underline;
+}
+
+.user-name {
+  font-size: 21px;
+  line-height: 25px;
+  color: #000;
+}
+
+.user-account-info a {
+  color: #32425c;
 }
 
 .user-account-info a:hover,
@@ -298,25 +300,27 @@ p.shop-description, h1.shop-description {
 
 .breadcrumbs {
   list-style: none;
-  font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
 }
 
+.breadcrumbs a {
+  color: #000;
+}
+
 .container h1 {
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
+  line-height: 36px;
   font-weight: normal;
-  line-height: 30px;
   text-transform: uppercase;
   color: #32425c;
   background-color: #f2f6f8;
 }
 
 .filter {
-  font-family: "PT Sans", Arial, sans-serif;
   text-transform: uppercase;
-
 }
 
 .filter fieldset {
@@ -330,8 +334,8 @@ p.shop-description, h1.shop-description {
 
 .filter legend {
   font-size: 17px;
-  font-weight: bold;
   line-height: 30px;
+  font-weight: bold;
   color: #000;
 }
 
@@ -341,6 +345,7 @@ p.shop-description, h1.shop-description {
 }
 
 .filter-button {
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
   color: #000;
@@ -353,7 +358,6 @@ p.shop-description, h1.shop-description {
 
 .catalog-item {
   border: 1px solid #e5e5e5;
-  font-family: "PT Sans", Arial, sans-serif;
   font-weight: bold;
   text-align: center;
   vertical-align: middle;
@@ -361,7 +365,7 @@ p.shop-description, h1.shop-description {
 
 .catalog-item:hover,
 .catalog-item:focus {
-  box-shadow: 0 0 10px #000;
+  box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.5);
 }
 
 .catalog-item-title {
@@ -387,8 +391,8 @@ p.shop-description, h1.shop-description {
 .buy-button {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
-  font-weight: normal;
   line-height: 18px;
+  font-weight: normal;
   text-transform: uppercase;
   color: #fff;
   background-color: #63a63e;
@@ -407,8 +411,8 @@ p.shop-description, h1.shop-description {
 .wishlist-button {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
-  font-weight: normal;
   line-height: 18px;
+  font-weight: normal;
   text-transform: uppercase;
   color: #32425c;
   background-color: #fff;
@@ -424,12 +428,24 @@ p.shop-description, h1.shop-description {
   opacity: 0.3;
 }
 
+.buy-button, .wishlist-button {
+  display: none;
+}
+
+.catalog-item:hover .catalog-item-image {
+  display: none;
+}
+
+.catalog-item:hover .buy-button,
+.catalog-item:hover .wishlist-button {
+  display: inline;
+}
+
 .pagination-list {
   list-style: none;
 }
 
 .pagination-item a {
-  font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
@@ -458,17 +474,15 @@ p.shop-description, h1.shop-description {
 }
 
 .item-in-basket {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 30px;
+  line-height: 36px;
   border-top: 7px solid #ee3643;
-  box-shadow: 0 10px 20px #000;
+  box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.75);
 }
 
 .basket-buttons {
   background-color: #f1f1f1;
-}
-
-.item-in-basket p {
-  font-size: 30px;
-  line-height: 30px;
 }
 
 .continue-buying {
