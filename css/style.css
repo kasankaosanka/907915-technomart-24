@@ -32,10 +32,8 @@ a {
   color: #fff;
 }
 
-.bookmarks:hover,
-.bookmarks:focus,
-.basket:hover,
-.basket:focus {
+.user-menu-link:hover,
+.user-menu-link:focus {
   background-color: #212a3a;
 }
 
@@ -150,8 +148,7 @@ a {
   background-color: #1d2739;
 }
 
-.company-info-title,
-.contacts-title {
+.section-title {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
   line-height: 36px;
@@ -405,11 +402,15 @@ a {
   box-shadow: 0 10px 25px 0 rgba(41, 52, 73, 0.5);
 }
 
-.catalog-item-title a {
+.catalog-item-title {
   font-size: 18px;
   line-height: 20px;
   font-weight: bold;
   color: #000;
+}
+
+.catalog-item-title a {
+  color: inherit;
 }
 
 .previous-price {
@@ -434,8 +435,7 @@ a {
   text-transform: uppercase;
   color: #fff;
   background-color: #63a63e;
-  border-bottom: #367315;
-  box-shadow: 0 3px 15px 0 rgba(0, 1, 1, 0.25);
+  box-shadow: inset 0 -3px 0 0 #367315;
 }
 
 .buy-button:hover,
@@ -473,7 +473,7 @@ a {
 }
 
 .catalog-item:hover .buttons-on-hover {
-  display: inline;
+  display: block;
 }
 
 .pagination-list {
