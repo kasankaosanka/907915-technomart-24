@@ -1,0 +1,526 @@
+body {
+  margin: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: normal;
+  color: #000;
+  background: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-navigation {
+  color: #fff;
+  background-color: #32425c;
+}
+
+.main-header, .main-footer {
+  font-family: "Cuprum", Arial, sans-serif;
+}
+
+.user-menu, .main-navigation {
+  font-size: 17px;
+  line-height: 18px;
+  color: #fff;
+  background-color: #293449;
+}
+
+.user-menu a {
+  color: #fff;
+}
+
+.user-menu-link:hover,
+.user-menu-link:focus {
+  background-color: #212a3a;
+}
+
+.bookmarks:active,
+.basket:active {
+  color: rgba(255, 255, 255, 0.6);
+  background-color: #161d29;
+}
+
+.logo {
+  box-shadow: inset 0 -5px 0 0 rgba(0, 0, 0, 0.24);
+  background-color: #ee3643;
+}
+
+.order {
+  background-color: #63a63e;
+}
+
+.search-form input {
+  color: #fff;
+  background-color: #293449;
+}
+
+.search-form input:hover {
+  background-color: #212a3a;
+}
+
+.search-form input:focus {
+  color: #000;
+  background-color: #fff;
+}
+
+.logo-header:hover,
+.logo-header:focus {
+  background-color: #ca2c37;
+}
+
+.logo-header:active {
+  background-color: #ba2732;
+}
+
+.order:hover,
+.order:focus {
+  background-color: #5fbb2d;
+}
+
+.order:active {
+  color: rgba(255, 255, 255, 0.6);
+  background-color: #518534;
+}
+
+.main-header-info {
+  font-size: 14px;
+  line-height: 24px;
+  color: #32425c;
+}
+
+.shop-description {
+  font-size: 16px;
+  line-height: 23px;
+  font-style: italic;
+  font-weight: normal;
+  color: #ee3643;
+}
+
+.phone-number {
+  font-size: 21px;
+  line-height: 25px;
+  text-align: center;
+  color: #ee3643;
+  border: 3px solid #fff;
+}
+
+.user-navigation {
+  list-style: none;
+}
+
+.user-link {
+  font-size: 21px;
+  line-height: 25px;
+  text-align: center;
+  color: #000;
+  background-color: #fff;
+}
+
+.user-link:hover,
+.user-link:focus {
+  color: #ee3643;
+}
+
+.user-link:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.site-navigation {
+  list-style: none;
+  background-color: #32425c;
+  box-shadow: inset 0 -5px 0 0 #293449;
+}
+
+.site-navigation a {
+  color: #fff;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+  background-color: #293449;
+}
+
+.site-navigation a:active {
+  color: rgba(255, 255, 255, 0.5);
+  background-color: #1d2739;
+}
+
+.section-title {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.company-info ul {
+  list-style: none;
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.button {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  vertical-align: middle;
+  text-align: center;
+  color: #fff;
+  background-color: #ee3643;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #ca2c37;
+}
+
+.button:active {
+  background-color: #ba2732;
+}
+
+.main-footer ul {
+  list-style: none;
+}
+
+.footer-navigation {
+  font-size: 18px;
+  line-height: 24px;
+  color: #f1f5f7;
+  background-color: #32425c;
+}
+
+.footer-navigation-list a {
+  color: inherit;
+}
+
+.footer-navigation-list-plus a {
+  color: #ffd180;
+}
+
+.footer-contacts a {
+  color: inherit;
+}
+
+.footer-copyright-block {
+  font-size: 16px;
+  line-height: 18px;
+  color: #fff;
+  background-color: #293449;
+}
+
+.footer-navigation a:hover,
+.footer-navigation a:focus {
+  text-decoration: underline;
+}
+
+.footer-navigation-list a:active {
+  text-decoration: none;
+  color: rgba(241, 245, 247, 0.5);
+}
+
+.footer-navigation-list-plus a:active {
+  text-decoration: none;
+  color: rgba(255, 209, 128, 0.5);
+}
+
+.footer-contacts a:hover {
+  text-decoration: none;
+}
+
+.social-button {
+  text-align: center;
+  vertical-align: middle;
+  color: inherit;
+}
+
+.social-button:hover,
+.social-button:focus,
+.social-button:active {
+  background-color: #ee3643;
+}
+
+.mail b,
+.author b {
+  font-weight: normal;
+}
+
+.mail a,
+.author a {
+  color: #ffd180;
+}
+
+.mail a:hover,
+.mail a:focus,
+.author a:hover,
+.author a:focus {
+  text-decoration: underline;
+}
+
+.mail a:active,
+.author a:active {
+  text-decoration: none;
+  color: #ee3643;
+}
+
+.modal-map {
+  box-shadow: 0 0 15px 1px rgba(47, 42, 43, 0.5);
+}
+
+.modal-write-us {
+  border-top: 7px solid #ee3643;
+  box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.75);
+}
+
+.write-us-form label {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.write-us-form input,
+.write-us-form textarea {
+  font-size: 13px;
+  line-height: 18px;
+  color: #a9a9a9;
+  border: 2px solid #dee3e4;
+}
+
+.submit-background {
+  background-color: #f4f4f4;
+}
+
+.user-profile-and-logout {
+  list-style: none;
+  background-color: #fff;
+}
+
+.user-account-info {
+  list-style: none;
+  font-size: 16px;
+  line-height: 18px;
+  color: #32425c;
+  text-decoration: underline;
+}
+
+.user-name {
+  font-size: 21px;
+  line-height: 25px;
+  color: #000;
+}
+
+.user-account-info a {
+  color: #32425c;
+}
+
+.user-account-info a:hover,
+.user-account-info a:focus {
+  color: #ee3643;
+}
+
+.user-account-info a:active {
+  color: rgba(50, 66, 92, 0.3);
+}
+
+.user-name:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.breadcrumbs {
+  list-style: none;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.breadcrumbs a {
+  color: #000;
+}
+
+.category-title {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #32425c;
+  background-color: #f2f6f8;
+}
+
+.filter {
+  text-transform: uppercase;
+}
+
+.filter fieldset {
+  border: none;
+  border-top: 1px solid #e5e5e5;
+}
+
+.filter ul {
+  list-style: none;
+}
+
+.filter legend {
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #000;
+}
+
+.filter-option label {
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.filter-button {
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  vertical-align: middle;
+  text-align: center;
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #e5e5e5;;
+}
+
+.catalog-list {
+  list-style: none;
+}
+
+.catalog-item {
+  border: 1px solid #e5e5e5;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.catalog-item:hover,
+.catalog-item:focus {
+  box-shadow: 0 10px 25px 0 rgba(41, 52, 73, 0.5);
+}
+
+.catalog-item-title {
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: bold;
+  color: #000;
+}
+
+.catalog-item-title a {
+  color: inherit;
+}
+
+.previous-price {
+  font-size: 17px;
+  line-height: 18px;
+  text-decoration: line-through;
+  color: #999999;
+}
+
+.current-price {
+  font-size: 17px;
+  line-height: 18px;
+  color: #fff;
+  background-color: #ee3643;
+}
+
+.buy-button {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #63a63e;
+  box-shadow: inset 0 -3px 0 0 #367315;
+}
+
+.buy-button:hover,
+.buy-button:focus {
+  background-color: #5fbb2d;
+}
+
+.buy-button:active {
+  background-color: #518534;
+  box-shadow: none;
+}
+
+.wishlist-button {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #32425c;
+  background-color: #fff;
+  border: 3px solid #63a63e;
+}
+
+.wishlist-button:hover,
+.wishlist-button:focus {
+  border-color: #32425c;
+}
+
+.wishlist-button:active {
+  opacity: 0.3;
+}
+
+.buttons-on-hover {
+  display: none;
+}
+
+.catalog-item:hover .buttons-on-hover {
+  display: block;
+}
+
+.pagination-list {
+  list-style: none;
+}
+
+.pagination-item a {
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #000;
+  border: 1px solid #e5e5e5;
+}
+
+.pagination-item a:hover,
+.pagination-item a:focus {
+  border-color: #bdc6ca;
+}
+
+.pagination-item a:active {
+  border-color: #ee3643;
+}
+
+.pagination-item-current a {
+  color: #fff;
+  background-color: #ee3643;
+  border-color: #ee3643;
+}
+
+.pagination-item-current a:hover,
+.pagination-item-current a:focus {
+  border-color: #ee3643;
+}
+
+.item-in-basket {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 30px;
+  line-height: 36px;
+  border-top: 7px solid #ee3643;
+  box-shadow: 0 20px 40px 0 rgba(41, 52, 73, 0.75);
+}
+
+.basket-buttons {
+  background-color: #f1f1f1;
+}
+
+.continue-buying {
+  color: #000;
+  background-color: #fff;
+}
