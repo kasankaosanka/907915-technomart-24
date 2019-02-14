@@ -21,6 +21,10 @@ a {
   font-family: "Cuprum", Arial, sans-serif;
 }
 
+.main-header {
+  background-color: #f3f7f8;
+}
+
 .user-menu, .main-navigation {
   font-size: 17px;
   line-height: 18px;
@@ -523,4 +527,219 @@ a {
 .continue-buying {
   color: #000;
   background-color: #fff;
+}
+
+/* ----- Сеточные стили ----- */
+html,
+body {
+  min-width: 1200px;
+  min-height: 1730px;
+}
+
+.main-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 60px;
+}
+
+.user-menu {
+  width: 940px;
+  padding: 0 130px;
+  margin: 0 auto 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-header {
+  width: 120px;
+  padding: 0 50px;
+  margin-right: 10px;
+}
+
+.bookmarks {
+  width: 150px;
+  margin-right: 10px;
+}
+
+.basket {
+  width: 140px;
+  margin-right: 10px;
+}
+
+.order {
+  width: 150px;
+}
+
+.main-header-info {
+  width: 940px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.shop-description {
+  width: 210px;
+  margin: 0 65px 0 50px;
+}
+
+.header-contacts-info {
+  width: 270px;
+  margin-right: 60px;
+}
+
+.user-navigation {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.login {
+  width: 120px;
+  margin-right: 10px;
+}
+
+.site-navigation  {
+  margin: 0;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-navigation {
+  width: 940px;
+  margin-bottom: 60px;
+}
+
+.company-info-container {
+  width: 940px;
+  margin: 0 auto 85px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.company-info {
+  width: 540px;
+  margin-right: 100px;
+}
+
+.contacts {
+  width: 300px;
+}
+
+.footer-navigation {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 130px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-address-container {
+  width: 340px;
+  margin-right: 40px;
+}
+
+.footer-list-container {
+  width: 560px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer-navigation-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 30px 0;
+}
+
+.footer-navigation-list-plus {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0 0 35px 20px;
+}
+
+.footer-copyright-block {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 130px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-copyright {
+  width: 240px;
+  margin-right: 140px;
+}
+
+.footer-social {
+  width: 160px;
+  margin-right: 90px;
+}
+
+.mail {
+  width: 160px;
+  margin-right: 30px;
+}
+
+.author {
+  width: 120px;
+  margin-left: auto;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.breadcrumbs {
+  padding: 20px 0;
+  margin: 0;
+  display: flex;
+}
+
+.category-title {
+  width: 940px;
+  margin: 0 auto 20px;
+}
+
+.catalog-columns {
+  width: 940px;
+  margin: 0 auto 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.filters {
+  width: 220px;
+  margin: 0;
+  padding: 0;
+}
+
+.catalog {
+  width: 700px;
+}
+
+.catalog-list {
+  margin: 0 0 20px;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.catalog-item {
+  width: 220px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.catalog-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.pagination-list {
+  margin: 0;
+  padding: 0;
 }
