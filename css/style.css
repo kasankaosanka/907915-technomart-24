@@ -1,7 +1,6 @@
 html,
 body {
   min-width: 960px;
-  min-height: 1730px;
 }
 
 body {
@@ -16,6 +15,11 @@ body {
 
 a {
   text-decoration: none;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
 }
 
 .main-navigation {
@@ -33,7 +37,7 @@ a {
 }
 
 .user-menu-wrapper {
-  width: 100%;
+  margin-bottom: 40px;
   background-color: #293449;
 }
 
@@ -47,7 +51,6 @@ a {
 .user-menu {
   width: 940px;
   margin: 0 auto;
-  margin-bottom: 40px;
   display: flex;
   justify-content: space-between;
 }
@@ -124,11 +127,6 @@ a {
 .order:active {
   color: rgba(255, 255, 255, 0.6);
   background-color: #518534;
-}
-
-.main-header-container {
-  width: 940px;
-  margin: 0 auto;
 }
 
 .main-header-info {
@@ -224,8 +222,6 @@ a {
 }
 
 .company-info-container {
-  width: 940px;
-  margin: 0 auto 85px;
   display: flex;
   justify-content: space-between;
 }
@@ -477,9 +473,8 @@ a {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.container {
-  width: 940px;
-  margin: 0 auto 20px;
+.main-container {
+  margin-bottom: 85px;
 }
 
 .breadcrumbs {
@@ -511,6 +506,7 @@ a {
 .catalog-columns {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 60px;
 }
 
 .filters {
@@ -528,12 +524,6 @@ a {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-}
-
-.catalog-item {
-  width: 218px;
-  margin-bottom: 20px;
-  margin-right: 20px;
 }
 
 .catalog-item:nth-child(3n) {
@@ -586,6 +576,9 @@ a {
 }
 
 .catalog-item {
+  width: 218px;
+  margin-bottom: 20px;
+  margin-right: 20px;
   border: 1px solid #e5e5e5;
   font-weight: bold;
   text-align: center;
