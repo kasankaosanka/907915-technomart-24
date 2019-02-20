@@ -17,6 +17,24 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .container {
   width: 940px;
   margin: 0 auto;
@@ -56,7 +74,14 @@ a {
 }
 
 .user-menu a {
+  padding: 12px 0;
+  vertical-align: middle;
+  text-align: center;
   color: #fff;
+}
+
+.user-menu-link {
+  position: relative;
 }
 
 .user-menu-link:hover,
@@ -66,12 +91,49 @@ a {
 
 .bookmarks {
   width: 150px;
-  margin-right: 10px;
+}
+
+.bookmarks::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 17px;
+  width: 18px;
+  height: 20px;
+  background-image: url("img/icon-bookmark.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.3;
+
+  background-color: red;
+}
+
+.user-menu-link:hover::before,
+.user-menu-link:focus::before {
+  opacity: 1;
+}
+
+.user-menu-link:active::before {
+  opacity: 0.5;
 }
 
 .basket {
-  width: 140px;
-  margin-right: 10px;
+  width: 150px;
+}
+
+.basket::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 17px;
+  width: 18px;
+  height: 20px;
+  background-image: url("img/cart-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.3;
+
+  background-color: red;
 }
 
 .bookmarks:active,
@@ -81,13 +143,17 @@ a {
 }
 
 .logo {
-  box-shadow: inset 0 -5px 0 0 rgba(0, 0, 0, 0.24);
+  box-shadow: 0 5px 0 0 #b52933;
   background-color: #ee3643;
 }
 
 .order {
   width: 150px;
   background-color: #63a63e;
+}
+
+.search-form {
+  width: 270px;
 }
 
 .search-form input {
@@ -105,17 +171,17 @@ a {
 }
 
 .logo-header {
-  width: 120px;
-  padding: 0 50px;
-  margin-right: 10px;
+  width: 220px;
 }
 
 .logo-header[href]:hover,
 .logo-header[href]:focus {
+  box-shadow: 0 5px 0 0 #9a212a;
   background-color: #ca2c37;
 }
 
 .logo-header[href]:active {
+  box-shadow: 0 5px 0 0 #8e1e26;
   background-color: #ba2732;
 }
 
@@ -192,8 +258,9 @@ a {
 
 .site-navigation {
   margin: 0;
-  padding: 20px 50px;
+  padding: 0 28px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   list-style: none;
   background-color: #32425c;
@@ -201,6 +268,9 @@ a {
 }
 
 .site-navigation a {
+  display: block;
+  padding: 19px 28px;
+  vertical-align: middle;
   color: #fff;
 }
 
