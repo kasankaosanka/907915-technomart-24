@@ -138,8 +138,21 @@ img {
 }
 
 .logo {
+  display: block;
+  width: 220px;
+  padding: 0;
+  padding-top: 22px;
+  padding-bottom: 17px;
+  margin: 0;
+  margin-bottom: 30px;
+  text-align: center;
   box-shadow: 0 5px 0 0 #b52933;
   background-color: #ee3643;
+}
+
+.logo img {
+  width: 145px;
+  height: 30px;
 }
 
 .order {
@@ -154,21 +167,40 @@ img {
 }
 
 .search-form input {
+  position: relative;
+  width: 270px;
+  padding: 12px 0 17px 48px;
+  border: none;
   color: #fff;
   background-color: #293449;
 }
 
 .search-form input:hover {
+  outline: none;
   background-color: #212a3a;
 }
 
 .search-form input:focus {
+  outline: none;
   color: #000;
   background-color: #fff;
 }
 
+.search-form input::before {
+ content: "";
+ position: absolute;
+ width: 17px;
+ height: 17px;
+ top: 0;
+ left: 0;
+ background-image: url("../img/icon-search.svg");
+ background-repeat: no-repeat;
+ background-position: 0 0;
+}
+
 .logo-header {
   width: 220px;
+  margin: 0;
 }
 
 .logo-header[href]:hover,
@@ -201,15 +233,17 @@ img {
   padding: 0 0;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   font-size: 14px;
   line-height: 24px;
   color: #32425c;
-  outline: 2px solid blue;
 }
 
 .shop-description {
   width: 200px;
   padding: 0;
+  padding-left: 52px;
+  margin: 45px 30px 40px 0;
   font-size: 16px;
   line-height: 23px;
   font-style: italic;
@@ -219,7 +253,7 @@ img {
 }
 
 .header-contacts-info {
-  width: 300px;
+  width: 274px;
   margin: 0;
   padding: 0;
   outline: 2px solid green;
@@ -227,20 +261,20 @@ img {
 
 .phone-number {
   position: relative;
-  padding: 0 50px 0 65px;
+  padding: 5px 50px 5px 65px;
+  margin: 0;
   font-size: 21px;
   line-height: 25px;
   text-align: center;
   color: #ee3643;
   box-sizing: border-box;
-  border: 3px solid #fff;
-  outline: 2px solid red;
+  border: 3px solid red;
 }
 
 .phone-number::before {
   content: "";
   position: absolute;
-  top: 12px;
+  top: 8px;
   left: 11px;
   width: 20px;
   height: 20px;
@@ -251,23 +285,23 @@ img {
 
 .user-navigation {
   margin: 0;
+  margin-bottom: 23px;
   padding: 0;
   width: 290px;
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   list-style: none;
-  outline: 2px solid green;
 }
 
 .user-link {
-  padding: 0 25px;
+  padding: 6px 22px;
   font-size: 21px;
   line-height: 25px;
   text-align: center;
   color: #000;
   background-color: #fff;
   box-sizing: border-box;
-  outline: 2px solid orange;
 }
 
 .user-link:hover,
@@ -288,8 +322,8 @@ img {
 .login::before {
   content: "";
   position: absolute;
-  top: 13px;
-  left: 15px;
+  top: 10px;
+  left: 18px;
   width: 22px;
   height: 20px;
   background-image: url("../img/icon-login.svg");
@@ -390,7 +424,9 @@ img {
   height: 2px;
   top: 8px;
   left: 0;
-  outline: 2px solid yellow;
+  background-image: url("../img/icon-list.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .button {
@@ -446,22 +482,37 @@ img {
   background-color: #32425c;
 }
 
+.footer-address-container {
+  width: 390px;
+  margin: 0;
+  padding: 0;
+
+}
+
+.footer-contacts {
+  margin: 0;
+  margin-bottom: 50px;
+  padding: 0;
+}
+
 .footer-list-container {
-  width: 560px;
+  width: 550px;
 }
 
 .footer-navigation-list {
   display: flex;
   justify-content: space-between;
-  margin: 0;
-  padding: 30px 0;
+  margin: 38px 0;
+  padding: 0;
 }
 
 .footer-navigation-list-plus {
   display: flex;
   justify-content: space-between;
   margin: 0;
-  padding: 0 0 35px 20px;
+  margin-bottom: 70px;
+  margin-left: 25px;
+  padding: 0;
 }
 
 .footer-navigation-list a {
@@ -486,6 +537,10 @@ img {
   line-height: 18px;
   color: #fff;
   background-color: #293449;
+}
+
+.footer-copyright-block p {
+  padding: 30px 0;
 }
 
 .footer-navigation a:hover,
@@ -520,19 +575,39 @@ img {
 }
 
 .footer-copyright {
+  margin-right: 150px;
   width: 240px;
-  margin-right: 140px;
+  outline: 2px solid red;
 }
 
 .footer-social {
-  width: 160px;
-  margin-right: 90px;
+  margin: 0;
+  padding: 0;
+  margin-right: 120px;
+  outline: 2px solid green;
+}
+
+.footer-social ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 131px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
 }
 
 .social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 41px;
+  height: 41px;
   text-align: center;
   vertical-align: middle;
   color: inherit;
+  background-color: #212a3a;
+  border-radius: 50%;
 }
 
 .social-button:hover,
@@ -542,13 +617,14 @@ img {
 }
 
 .mail {
-  width: 160px;
-  margin-right: 30px;
+  width: 140px;
+  margin-right: 50px;
+  outline: 2px solid red;
 }
 
 .author {
-  width: 120px;
-  margin-left: auto;
+  width: 110px;
+  outline: 2px solid blue;
 }
 
 .mail b,
@@ -601,23 +677,57 @@ img {
   background-color: #f4f4f4;
 }
 
+.user-account {
+  outline: 2px solid yellow;
+}
+
 .user-profile-and-logout {
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   list-style: none;
   background-color: #fff;
+  outline: 2px solid blue;
 }
 
 .user-account-info {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
   list-style: none;
   font-size: 16px;
   line-height: 18px;
   color: #32425c;
   text-decoration: underline;
+  outline: 2px solid black;
 }
 
 .user-name {
+  position: relative;
+  padding: 5px 0;
+  padding-left: 48px;
+  margin-right: 40px;
   font-size: 21px;
   line-height: 25px;
   color: #000;
+}
+
+.user-name::before {
+  content: "";
+  position: absolute;
+  width: 23px;
+  height: 20px;
+  top: 3px;;
+  left: 12px;
+  background-image: url("../img/icon-user.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
 }
 
 .user-account-info a {
@@ -635,6 +745,27 @@ img {
 
 .user-name:active {
   color: rgba(0, 0, 0, 0.3);
+}
+
+.my-orders {
+  padding-left: 15px;
+}
+
+.user-account-link {
+  position: relative;
+  padding-left: 32px;
+}
+
+.user-account-link::before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  top: 7px;;
+  left: 14px;
+  background-image: url("../img/icon-dot.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .main-container {
@@ -1001,6 +1132,10 @@ img {
 
 .pagination-item {
   margin-right: 10px;
+}
+
+.pagination-item:last-child {
+  margin-right: 0;
 }
 
 .pagination-item a {
