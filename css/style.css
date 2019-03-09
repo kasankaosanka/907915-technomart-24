@@ -32,7 +32,8 @@ input[type="radio"].visually-hidden {
   border: 0;
   padding: 0;
   white-space: nowrap;
-  clip-path: inset(100%);
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -71,8 +72,11 @@ input[type="radio"].visually-hidden {
 .user-menu {
   width: 940px;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .user-menu a {
@@ -96,7 +100,7 @@ input[type="radio"].visually-hidden {
 
 .bookmarks {
   padding-left: 44px;
-  padding-right: 29px;
+  padding-right: 28px;
   margin-left: auto;
 }
 
@@ -159,7 +163,8 @@ input[type="radio"].visually-hidden {
   margin: 0;
   margin-bottom: 30px;
   text-align: center;
-  box-shadow: 0 5px 0 0 #b52933;
+  -webkit-box-shadow: 0 5px 0 0 #b52933;
+          box-shadow: 0 5px 0 0 #b52933;
   background-color: #ee3643;
 }
 
@@ -203,8 +208,32 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/icon-search-red.svg");
 }
 
+.search-form input::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.search-form input:-ms-input-placeholder {
+  color: #fff;
+}
+
+.search-form input::-ms-input-placeholder {
+  color: #fff;
+}
+
 .search-form input::placeholder {
   color: #fff;
+}
+
+.search-form input:focus::-webkit-input-placeholder {
+  color: #000;
+}
+
+.search-form input:focus:-ms-input-placeholder {
+  color: #000;
+}
+
+.search-form input:focus::-ms-input-placeholder {
+  color: #000;
 }
 
 .search-form input:focus::placeholder {
@@ -219,12 +248,14 @@ input[type="radio"].visually-hidden {
 
 .logo-header[href]:hover,
 .logo-header[href]:focus {
-  box-shadow: 0 5px 0 0 #9a212a;
+  -webkit-box-shadow: 0 5px 0 0 #9a212a;
+          box-shadow: 0 5px 0 0 #9a212a;
   background-color: #ca2c37;
 }
 
 .logo-header[href]:active {
-  box-shadow: 0 5px 0 0 #8e1e26;
+  -webkit-box-shadow: 0 5px 0 0 #8e1e26;
+          box-shadow: 0 5px 0 0 #8e1e26;
   background-color: #ba2732;
 }
 
@@ -246,9 +277,14 @@ input[type="radio"].visually-hidden {
 .main-header-info {
   padding: 0;
   margin-bottom: 39px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 14px;
   line-height: 24px;
   color: #32425c;
@@ -282,7 +318,8 @@ input[type="radio"].visually-hidden {
   line-height: 25px;
   text-align: center;
   color: #ee3643;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border: 3px solid #fff;
 }
 
@@ -310,10 +347,17 @@ input[type="radio"].visually-hidden {
   margin-left: auto;
   padding: 0;
   width: 280px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   list-style: none;
 }
 
@@ -325,7 +369,8 @@ input[type="radio"].visually-hidden {
   text-align: center;
   color: #000;
   background-color: #fff;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .user-link:hover,
@@ -361,11 +406,15 @@ input[type="radio"].visually-hidden {
 .site-navigation {
   margin: 0;
   padding: 0 26px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   list-style: none;
   background-color: #32425c;
-  box-shadow: inset 0 -5px 0 0 #293449;
+  -webkit-box-shadow: inset 0 -5px 0 0 #293449;
+          box-shadow: inset 0 -5px 0 0 #293449;
 }
 
 .site-navigation a {
@@ -404,8 +453,11 @@ input[type="radio"].visually-hidden {
 }
 
 .benefits {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-bottom: 33px;
 }
 
@@ -675,8 +727,11 @@ input[type="radio"].visually-hidden {
 }
 
 .title-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-bottom: 20px;
   padding: 25px 0 26px 0;
   background-color: #f9f5f0;
@@ -712,8 +767,11 @@ input[type="radio"].visually-hidden {
 }
 
 .popular-brands-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -721,8 +779,12 @@ input[type="radio"].visually-hidden {
 
 .popular-brands-item {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 218px;
   height: 144px;
   margin-bottom: 20px;
@@ -735,7 +797,9 @@ input[type="radio"].visually-hidden {
 }
 
 .popular-brands-item a {
-  align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .popular-brands-item img {
@@ -773,12 +837,14 @@ img.metabo-logo {
 }
 
 .popular-brands-item:hover {
-  box-shadow: 0 10px 25px 0 rgba(41, 52, 73, 0.5);
+  -webkit-box-shadow: 0 10px 25px 0 rgba(41, 52, 73, 0.5);
+          box-shadow: 0 10px 25px 0 rgba(41, 52, 73, 0.5);
 }
 
 .popular-brands-item:active,
 .popular-brands-item:focus {
-  box-shadow: 0 4px 10px 0 rgba(41, 52, 73, 0.5);
+  -webkit-box-shadow: 0 4px 10px 0 rgba(41, 52, 73, 0.5);
+          box-shadow: 0 4px 10px 0 rgba(41, 52, 73, 0.5);
 }
 
 .popular-brands-item:active img,
@@ -809,8 +875,11 @@ img.metabo-logo {
 }
 
 .services-list-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .services ul {
@@ -849,18 +918,22 @@ img.metabo-logo {
   color: #fff;
   background-color: #32425c;
   border: none;
-  box-shadow: 0 0 0 1px #293449,
+  -webkit-box-shadow: 0 0 0 1px #293449,
+              inset 0 1px 0 0 #405069;
+          box-shadow: 0 0 0 1px #293449,
               inset 0 1px 0 0 #405069;
 }
 
 .service-button:hover {
   background-color: #293449;
+  cursor: pointer;
 }
 
 .current-service-button {
   color: #32425c;
   background-color: #fff;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .current-service-button:hover {
@@ -936,9 +1009,14 @@ img.metabo-logo {
 }
 
 .company-info-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .company-info {
@@ -1056,9 +1134,14 @@ img.metabo-logo {
 .footer-navigation {
   width: 940px;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   font-size: 18px;
   line-height: 24px;
   color: #f1f5f7;
@@ -1083,9 +1166,14 @@ img.metabo-logo {
 }
 
 .footer-navigation-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 38px 0 34px 0;;
   padding: 0;
 }
@@ -1096,9 +1184,14 @@ img.metabo-logo {
 }
 
 .footer-navigation-list-plus {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 0;
   margin-bottom: 70px;
   margin-left: 25px;
@@ -1154,10 +1247,17 @@ img.metabo-logo {
   line-height: 18px;
   color: #fff;
   background-color: #293449;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .footer-copyright {
@@ -1174,16 +1274,25 @@ img.metabo-logo {
 }
 
 .footer-social ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
 .social-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 41px;
   height: 41px;
@@ -1257,9 +1366,14 @@ img.metabo-logo {
   margin: 0;
   margin-bottom: 9px;
   padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   list-style: none;
   background-color: #fff;
 }
@@ -1267,14 +1381,18 @@ img.metabo-logo {
 .user-account-info {
   margin: 0;
   padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   list-style: none;
   font-size: 16px;
   line-height: 18px;
   color: #32425c;
-  text-decoration: underline;
 }
 
 .user-name {
@@ -1310,16 +1428,19 @@ img.metabo-logo {
   fill: #32425c;
 }
 
+.user-name svg:active,
+.user-name svg:focus,
 .user-name:active svg,
 .user-name:focus svg,
-.logout:active svg,
-.logout:focus svg {
+.logout svg:active,
+.logout svg:focus {
   fill: #c5c5c5;
 }
 
 .user-account-info a {
   display: block;
   color: #32425c;
+  text-decoration: underline;
 }
 
 .user-account-info a:hover,
@@ -1363,9 +1484,14 @@ img.metabo-logo {
 .breadcrumbs {
   padding: 0;
   margin: 21px 0 20px 0;;
+  display: -webkit-box;;
+  display: -ms-flexbox;;
   display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   list-style: none;
   font-size: 13px;
   line-height: 18px;
@@ -1441,9 +1567,14 @@ img.metabo-logo {
 }
 
 .catalog-columns {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding-bottom: 60px;
 }
 
@@ -1460,8 +1591,11 @@ img.metabo-logo {
 .catalog-list {
   margin: 0 0 20px;
   padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .catalog-list .catalog-item:nth-child(3n) {
@@ -1577,7 +1711,8 @@ img.metabo-logo {
   padding: 0;
   border: 8px solid #fff;
   border-radius: 50%;
-  box-shadow: 0 2px 1px 0 #cfcfcf;
+  -webkit-box-shadow: 0 2px 1px 0 #cfcfcf;
+          box-shadow: 0 2px 1px 0 #cfcfcf;
   background-color: #ababab;
   cursor: pointer;
 }
@@ -1628,7 +1763,10 @@ img.metabo-logo {
   position: relative;
   display: block;
   cursor: pointer;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   font-size: 15px;
   line-height: 20px;
 }
@@ -1738,16 +1876,20 @@ img.metabo-logo {
 }
 
 .sorting-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 19px;
   background-color: #f7f3ec;
 }
 
-.sorting-block h2,
-.sorting-block a {
+.sorting-block h2 {
   display: block;
   margin: 0;
+  margin-left: 18px;
+  margin-right: 142px;
   padding: 9px 0 10px 0;
   font-size: 13px;
   line-height: 18px;
@@ -1755,9 +1897,15 @@ img.metabo-logo {
   text-transform: uppercase;
 }
 
-.sorting-block h2 {
-  margin-left: 18px;
-  margin-right: 142px;
+.sorting-block a {
+  display: block;
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 9px 0 0 0;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: normal;
+  text-transform: uppercase;
 }
 
 .sorting-link {
@@ -1766,28 +1914,28 @@ img.metabo-logo {
 
 .sorting-link:nth-of-type(1) {
   margin-right: 69px;
-  text-decoration: underline dotted #ee3643;
+  border-bottom: 1px dotted #ee3643;
 }
 
 .sorting-link:nth-of-type(2) {
   margin-right: 65px;
-  text-decoration: underline dotted #ee3643;
+  border-bottom: 1px dotted #ee3643;
 }
 
 .sorting-link:nth-of-type(3) {
   margin-right: 47px;
-  text-decoration: underline dotted #ee3643;
+  border-bottom: 1px dotted #ee3643;
 }
 
 .sorting-link:hover {
   color: #000;
-  text-decoration: underline solid #ee3643;
+  border-bottom: 1px solid #ee3643;
 }
 
 .sorting-link:active,
 .sorting-link:focus {
   color: #ee3643;
-  text-decoration: none;
+  border-color: #f7f3ec;
 }
 
 .up-sorting svg,
@@ -1831,7 +1979,8 @@ img.metabo-logo {
 
 .catalog-item:hover,
 .catalog-item:focus {
-  box-shadow: 0 10px 25px 0 rgba(41, 52, 73, 0.5);
+  -webkit-box-shadow: 0 10px 25px 0 rgba(41, 52, 73, 0.5);
+          box-shadow: 0 10px 25px 0 rgba(41, 52, 73, 0.5);
 }
 
 .catalog-item p {
@@ -1929,7 +2078,8 @@ img.metabo-logo {
   text-transform: uppercase;
   color: #fff;
   background-color: #63a63e;
-  box-shadow: inset 0 -3px 0 0 #367315;
+  -webkit-box-shadow: inset 0 -3px 0 0 #367315;
+          box-shadow: inset 0 -3px 0 0 #367315;
   border-radius:3px;
 }
 
@@ -1953,7 +2103,8 @@ img.metabo-logo {
 
 .buy-button:active {
   background-color: #518534;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .buy-button:hover::before,
@@ -2008,8 +2159,11 @@ img.metabo-logo {
 }
 
 .pagination-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -2100,7 +2254,8 @@ img.metabo-logo {
   margin-left: -470px;
   width: 940px;
   height: 447px;
-  box-shadow: 0 0 15px 1px rgba(47, 42, 43, 0.5);
+  -webkit-box-shadow: 0 0 15px 1px rgba(47, 42, 43, 0.5);
+          box-shadow: 0 0 15px 1px rgba(47, 42, 43, 0.5);
 }
 
 .modal-map iframe {
@@ -2129,7 +2284,8 @@ img.metabo-logo {
   width: 620px;
   padding: 0 0;
   border-top: 7px solid #ee3643;
-  box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.75);
+          box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.75);
 }
 
 .write-us-form {
@@ -2137,9 +2293,14 @@ img.metabo-logo {
   margin: 0 80px;
   padding: 0;
   padding-top: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .write-us-form label {
@@ -2155,7 +2316,8 @@ img.metabo-logo {
   font-size: 13px;
   line-height: 18px;
   color: #a9a9a9;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border: 2px solid #dee3e4;
   border-radius: 3px;
 }
@@ -2211,7 +2373,8 @@ img.metabo-logo {
   line-height: 36px;
   text-align: center;
   border-top: 7px solid #ee3643;
-  box-shadow: 0 20px 40px 0 rgba(41, 52, 73, 0.75);
+  -webkit-box-shadow: 0 20px 40px 0 rgba(41, 52, 73, 0.75);
+          box-shadow: 0 20px 40px 0 rgba(41, 52, 73, 0.75);
 }
 
 .modal-item-in-basket p {
@@ -2272,23 +2435,50 @@ img.metabo-logo {
 
 .modal-show {
   display: block;
-  animation: bounce 0.6s;
+  -webkit-animation: bounce 0.6s;
+          animation: bounce 0.6s;
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: translateY(-2000px);
+            transform: translateY(-2000px);
+  }
+
+  70% {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+
+  90% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
 }
 
 @keyframes bounce {
   0% {
-    transform: translateY(-2000px);
+    -webkit-transform: translateY(-2000px);
+            transform: translateY(-2000px);
   }
 
   70% {
-    transform: translateY(30px);
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
   }
 
   90% {
-    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
   }
 
   100% {
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
