@@ -645,14 +645,13 @@ input[type="radio"].visually-hidden {
 }
 
 .slider-item:first-of-type {
-
+  display: none;
   background-image: url("../img/slider-1.jpg");
   background-position: 0 0;
   background-repeat: no-repeat;
 }
 
 .slider-item:nth-of-type(2) {
-  display: none;
   background-image: url("../img/slider-2.jpg");
   background-position: 0 0;
   background-repeat: no-repeat;
@@ -1733,6 +1732,7 @@ img.metabo-logo {
   display: inline-block;
   font-size: 17px;
   line-height: 18px;
+  vertical-align: middle;
 }
 
 .price-controls span {
@@ -1741,6 +1741,7 @@ img.metabo-logo {
   line-height: 18px;
   padding: 0;
   margin: 0 7px;
+  vertical-align: middle;
 }
 
 .price-controls input {
@@ -1927,13 +1928,13 @@ img.metabo-logo {
   border-bottom: 1px dotted #ee3643;
 }
 
-.sorting-link:hover {
+.sorting-link:hover,
+.sorting-link:focus {
   color: #000;
   border-bottom: 1px solid #ee3643;
 }
 
-.sorting-link:active,
-.sorting-link:focus {
+.sorting-block .sorting-link-active {
   color: #ee3643;
   border-color: #f7f3ec;
 }
@@ -1944,14 +1945,13 @@ img.metabo-logo {
 }
 
 .up-sorting svg:hover,
-.down-sorting svg:hover {
+.down-sorting svg:hover,
+.up-sorting svg:focus,
+.down-sorting svg:focus {
   fill: #000;
 }
 
-.up-sorting svg:active,
-.up-sorting svg:focus,
-.down-sorting svg:active,
-.down-sorting svg:focus {
+.sorting-link-active svg {
   fill: #ee3643;
 }
 
@@ -2249,6 +2249,7 @@ img.metabo-logo {
 
 .modal-map {
   display: none;
+  z-index: 10;
   top: 20px;
   left: 50%;
   margin-left: -470px;
@@ -2278,6 +2279,7 @@ img.metabo-logo {
 
 .modal-write-us {
   display: none;
+  z-index: 10;
   top: 170px;
   left: 50%;
   margin-left: -310px;
@@ -2337,6 +2339,16 @@ img.metabo-logo {
   height: 114px;
   padding: 9px 13px;
   resize: none;
+}
+
+.write-us-form input:hover,
+.write-us-form textarea:hover {
+  border-color: #b5b5b5;
+}
+
+.write-us-form input:focus,
+.write-us-form textarea:focus {
+  border-color: #ee3643;
 }
 
 .user-text-input {
