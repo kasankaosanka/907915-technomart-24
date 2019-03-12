@@ -5,7 +5,7 @@ body {
 
 body {
   margin: 0;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
   font-weight: normal;
@@ -49,7 +49,7 @@ input[type="radio"].visually-hidden {
 }
 
 .main-header, .main-footer {
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
 }
 
 .main-header {
@@ -473,7 +473,7 @@ input[type="radio"].visually-hidden {
   margin: 0;
   margin-bottom: 12px;
   padding: 0;
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 24px;
   line-height: 30px;
   font-weight: bold;
@@ -564,7 +564,7 @@ input[type="radio"].visually-hidden {
 }
 
 .slider {
-  margin-right: 19px;
+  margin-right: 20px;
 }
 
 .slider-switch,
@@ -639,9 +639,10 @@ input[type="radio"].visually-hidden {
 }
 
 .slider-item {
-  width: 621px;
-  height: 267px;
+  width: 620px;
+  height: 266px;
   color: #fff;
+  background-color: #000;
 }
 
 .slider-item:first-of-type {
@@ -661,7 +662,7 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding-top: 19px;
   padding-left: 24px;
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 36px;
   line-height: 43px;
   font-weight: bold;
@@ -712,7 +713,7 @@ input[type="radio"].visually-hidden {
 }
 
 .popular-items .previous-price {
-  margin-bottom: 7px;
+  margin-bottom: 8px;
 }
 
 .popular-items .current-price {
@@ -909,7 +910,7 @@ img.metabo-logo {
   padding: 14px 0 18px 0;
   padding-left: 22px;
   margin: 0;
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 21px;
   line-height: 30px;
   font-weight: bold;
@@ -956,7 +957,7 @@ img.metabo-logo {
 .services-section h3 {
   margin: 0;
   margin-bottom: 22px;
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 36px;
   line-height: 43px;
   font-weight: normal;
@@ -1000,7 +1001,7 @@ img.metabo-logo {
   margin-top: 70px;
   margin-bottom: 23px;
   padding: 0;
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 30px;
   line-height: 36px;
   font-weight: normal;
@@ -1043,7 +1044,7 @@ img.metabo-logo {
   margin-bottom: 36px;
   padding: 0;
   list-style: none;
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 18px;
   line-height: 20px;
 }
@@ -1078,7 +1079,7 @@ img.metabo-logo {
 .button {
   display: inline-block;
   padding: 10px 40px;
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
@@ -1556,7 +1557,7 @@ img.metabo-logo {
   padding: 27px 0;
   padding-left: 27px;
   margin: 0 auto 20px;
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 30px;
   line-height: 36px;
   font-weight: normal;
@@ -1784,6 +1785,11 @@ img.metabo-logo {
   background-position: 0 0;
 }
 
+.filter-input-checkbox:focus + label::before {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
 .filter-input-checkbox:checked + label::before {
   background-image: url("../img/checkbox-on.svg");
 }
@@ -1832,6 +1838,11 @@ img.metabo-logo {
   left: -27px;
   background-color: #c5c5c5;
   border-radius: 50%;
+}
+
+.filter-input-radio:focus + label::before {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
 }
 
 .filter-input-radio:hover + label::before {
@@ -1934,7 +1945,9 @@ img.metabo-logo {
   border-bottom: 1px solid #ee3643;
 }
 
-.sorting-block .sorting-link-active {
+.sorting-block .sorting-link-active,
+.sorting-block .sorting-link-active:hover,
+.sorting-block .sorting-link-active:focus {
   color: #ee3643;
   border-color: #f7f3ec;
 }
@@ -1953,6 +1966,11 @@ img.metabo-logo {
 
 .sorting-link-active svg {
   fill: #ee3643;
+}
+
+.sorting-link-active svg:hover {
+  fill: #ee3643;
+  cursor: auto;
 }
 
 .sorting-block .up-sorting {
@@ -2071,7 +2089,7 @@ img.metabo-logo {
   margin: 0 auto;
   margin-bottom: 8px;
   padding: 11px 8px 9px 12px;
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   font-weight: normal;
@@ -2122,7 +2140,7 @@ img.metabo-logo {
   margin: 0 auto;
   margin-bottom: 7px;
   padding: 8px 0 6px 3px;
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   font-weight: normal;
@@ -2228,7 +2246,7 @@ img.metabo-logo {
 .category-info h2 {
   margin: 0;
   margin-bottom: 23px;
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 30px;
   line-height: 36px;
   font-weight: normal;
@@ -2308,7 +2326,7 @@ img.metabo-logo {
 .write-us-form label {
   display: block;
   margin-bottom: 7px;
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 18px;
   line-height: 21px;
 }
@@ -2322,6 +2340,7 @@ img.metabo-logo {
           box-sizing: border-box;
   border: 2px solid #dee3e4;
   border-radius: 3px;
+  outline: none;
 }
 
 .user-name-input,
@@ -2360,7 +2379,7 @@ img.metabo-logo {
 .submit-background {
   width: 460px;
   padding: 37px 80px;
-  margin: 0;
+  margin-left: -80px;
   background-color: #f4f4f4;
 }
 
@@ -2380,7 +2399,7 @@ img.metabo-logo {
   left: 50%;
   margin-left: -310px;
   width: 620px;
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 30px;
   line-height: 36px;
   text-align: center;
@@ -2442,13 +2461,17 @@ img.metabo-logo {
   cursor: pointer;
   color: #000;
   background-color: #fff;
-  outline: none;
 }
 
 .modal-show {
   display: block;
   -webkit-animation: bounce 0.6s;
           animation: bounce 0.6s;
+}
+
+.modal-error {
+  -webkit-animation: shake 0.6s;
+          animation: shake 0.6s;
 }
 
 @-webkit-keyframes bounce {
@@ -2492,5 +2515,39 @@ img.metabo-logo {
   100% {
     -webkit-transform: translateY(0);
             transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes shake {
+  0%, 100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
   }
 }
